@@ -2,18 +2,36 @@
 
 🇬🇧 [English](./README.md) | 🇫🇷 [Français](./README.fr.md)
 
-Defensive security labs built from scratch in isolated environments — demonstrating real attack techniques (SSH brute force) followed by concrete hardening and validation, with professional pentest-style reporting.
-
-## Labs
-
-| Lab | Description | Tools |
-|---|---|---|
-| [SSH Brute Force & Hardening](./ssh-hardening) | SSH brute-force attack followed by server hardening (Fail2ban + key-based authentication) and validation | Nmap, Hydra, Fail2ban, OpenSSH |
+A hands-on learning and documentation space dedicated to **defensive security**: understanding threats, detecting suspicious activity, protecting systems, and validating defensive controls.
 
 ## About
 
-This repository is a portfolio of hands-on defensive security labs. Each lab reproduces a real attack technique in an isolated environment (host-only network, no production systems), then applies concrete remediation and validates its effectiveness. Documentation follows a real pentest engagement format: scope, methodology, evidence (screenshots), results, and recommendations. The goal is educational — to understand how attacks work in order to better defend against them.
+This repository brings together rooms (hands-on labs) carried out in isolated, authorized environments. It is a growing portfolio of Blue Team work, with a Purple Team approach that connects attack techniques to defensive capabilities.
 
-## Legal & Ethical Notice
+Each room explores a specific scenario and documents its context, methodology, evidence, and conclusions. Depending on its focus, a room may cover log analysis, detection, hardening, or incident response: reproducing an attack is not a requirement for every lab.
 
-All techniques demonstrated here were performed in isolated lab environments against machines owned by the author, for educational purposes only. Do not use these techniques against systems you do not own or without explicit written authorization. The author assumes no responsibility for misuse of this information.
+## Objectives
+
+- **Observe and analyze** system and network events to identify suspicious activity.
+- **Detect and understand** attack techniques and the traces they leave behind.
+- **Protect and harden** services, configurations, and access controls.
+- **Respond and validate** containment, remediation, and prevention measures.
+- **Document** findings with evidence and actionable recommendations.
+
+## Available rooms
+
+| Room | Description | Tools |
+|---|---|---|
+| [SSH Brute Force & Hardening](./ssh-hardening/RAPPORT.md) | Analysis of an SSH brute-force attack, server hardening, and validation of defensive controls | Nmap, Hydra, Fail2ban, OpenSSH |
+
+This list will grow as new work is completed. Only rooms already available are listed.
+
+## Organization and approach
+
+Each room has its own folder. Depending on the scenario, it contains a Markdown report, a PDF version, screenshots, and supporting files needed to understand the lab.
+
+The general workflow is: **define scope → observe and analyze → implement defenses → test their effectiveness → document results and limitations**.
+
+## Legal & ethical notice
+
+These projects are carried out for educational purposes in isolated environments, on systems owned by the author or explicitly authorized for testing. Do not apply any technique to third-party systems without prior written authorization. The author assumes no responsibility for misuse of this information.
